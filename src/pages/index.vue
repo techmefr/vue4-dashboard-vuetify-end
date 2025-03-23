@@ -195,7 +195,7 @@ watch(apiResult, (newValue) => {
 
 // API
 const fetchMonetizationApi = async () => {
-  fetch('https://www.anthony-cardinale.fr/_placeholder/monetization-api.json')
+  fetch('/data/monetization-api.json')
   .then(response => response.json())
   .then(data => apiResult.value = data);
 }
